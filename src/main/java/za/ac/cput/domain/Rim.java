@@ -15,7 +15,7 @@ public class Rim extends Product {
     public Rim(Builder builder) {
         super(builder);
 
-        this.diameter = builder.diameter;
+        this.diameter = builder. diameter;
         this.width = builder.width;
         this.boltPattern = builder.boltPattern;
         this.offset = builder.offset;

@@ -13,7 +13,7 @@ public abstract class Product {
 
     public Product(Builder builder) {
         this.productID = builder.productID;
-        this.name = builder.name;
+        this.name = builder. name;
         this.brand = builder.brand;
         this.price = builder.price;
         this.stock = builder.stock;
