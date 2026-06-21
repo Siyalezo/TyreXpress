@@ -14,7 +14,7 @@ public class Tyre extends Product {
     public Tyre(Builder builder) {
         super(builder);
 
-        this.size = builder. size;
+        this.size = builder.size;
         this.season = builder.season;
         this.loadIndex = builder.loadIndex;
         this.speedRating = builder.speedRating;
