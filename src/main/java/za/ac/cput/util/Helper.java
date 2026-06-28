@@ -29,7 +29,6 @@ public class Helper {
         }
         return true;
     }
-
     public static boolean isValidPostalCode(String postalCode) {
         if (isNullOrEmpty(postalCode)) return false;
         return postalCode.matches("\\d{4}");

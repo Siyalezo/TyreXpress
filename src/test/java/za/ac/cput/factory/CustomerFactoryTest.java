@@ -25,6 +25,7 @@ class CustomerFactoryTest {
                 .setuser_Id("1")
                 .setaddress(address)
                 .build();
+
         System.out.println(customer1);
     }
 }

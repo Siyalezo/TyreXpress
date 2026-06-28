@@ -9,6 +9,7 @@ class AddressFactoryTest {
 
     @Test
     void createAddress() {
+
         Address address = new Address.Builder()
                 .setaddress_id("11")
                 .setstreet("Salubindza")
