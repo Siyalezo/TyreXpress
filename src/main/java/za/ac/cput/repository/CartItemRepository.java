@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CartItemRepository implements ICartItermRepo {
+
     private static CartItemRepository repository = null;
     private List<CartItem> cartItemDB;
 
@@ -31,7 +32,7 @@ public class CartItemRepository implements ICartItermRepo {
     @Override
     public CartItem read(String cartItemId) {
         for (CartItem ci : cartItemDB) {
-            if (ci.getCartItemId().equals(cartItemId)) {
+            if (ci.getCartItemId() != null && ci.getCartItemId().equals(cartItemId)) {
                 return ci;
             }
         }
