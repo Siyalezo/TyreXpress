@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/cartitem")
+@CrossOrigin(origins = "http://localhost:4200")
 public class CartItemController {
 
     private final ICartItemService cartItemService;
@@ -55,8 +56,6 @@ public class CartItemController {
         }
         return ResponseEntity.notFound().build();
     }
-
-
 
     @GetMapping("/getAll")
     public ResponseEntity<List<CartItem>> getAll() {

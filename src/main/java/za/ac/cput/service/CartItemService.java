@@ -45,4 +45,9 @@ public class CartItemService implements ICartItemService {
     public List<CartItem> getAll() {
         return repository.findAll();
     }
+
+    @Override
+    public List<CartItem> getByCartId(Long cartId) {
+        return repository.findByCartId(cartId);
+    }
 }

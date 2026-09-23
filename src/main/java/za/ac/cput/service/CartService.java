@@ -45,4 +45,9 @@ public class CartService implements ICartService {
     public List<Cart> getAll() {
         return repository.findAll();
     }
+
+    @Override
+    public Cart findByCustomerId(String customerId) {
+        return repository.findByCustomerId(customerId).orElse(null);
+    }
 }
